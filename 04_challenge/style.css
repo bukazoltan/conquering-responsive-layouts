@@ -4,17 +4,41 @@
     
     body {
         margin: 0;
+        font-family: 'Roboto', sans-serif;
     }
     
     h1 {
         margin: 0;
+        font-size: 3rem;
+        font-weight: bold;
     }
     
-    main {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+    
+    .hero {
         background: #23424A;
         background: linear-gradient(90deg, rgba(35, 66, 74, 1) 0%, rgba(53, 112, 128, 1) 47%, rgba(44, 148, 170, 1) 100%);
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
+    }
+    
+    .two-columns {
+        background: #136C72;
+        color: white;
+    }
+    
+    .three-columns {
+        padding: 3em 0;
+    }
+    
+    .three-columns h2 {
+        color: #87629A;
     }
     
     .container {
@@ -22,21 +46,11 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 50px 0;
-        color: white;
-    }
-    
-    .container h1 {
-        font-size: 3rem;
-        font-weight: bold;
-    }
-    
-    .container p {
-        font-size: 1.1em;
-        line-height: 1.5em;
     }
     
     .content {
         width: 55%;
+        color: white;
     }
     
     .content p {
@@ -76,11 +90,14 @@
         color: darkslategrey;
     }
     
-    @media screen and (max-width: 600px) {
-        html {
-            font-size: 14px;
-        }
-        .content {
-            width: 100%;
-        }
+    .row {
+        display: flex;
+    }
+    
+    .col+.col {
+        margin-left: 50px;
+    }
+    
+    .row-centered .col {
+        text-align: center;
     }
