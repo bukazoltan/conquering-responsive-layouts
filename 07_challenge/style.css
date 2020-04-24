@@ -1,0 +1,150 @@
+/* resets */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+.container {
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+
+/* header styles */
+
+.header {
+    background-color: #F3EED9;
+    width: 100%;
+    padding: 1em;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 60%;
+    min-height: 450px;
+}
+
+.intro__title,
+.intro__subtitle {
+    text-align: center;
+}
+
+.intro__subtitle {
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.intro__title {
+    color: #824936;
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* sections */
+
+.section {
+    padding: 3em;
+    padding: 3em;
+}
+
+.section__content {
+    font-size: 1.3em;
+}
+
+.section__image {
+    width: 70%;
+}
+
+
+/* white section colors and fonts */
+
+.section--white {
+    background-color: #fff;
+}
+
+.section--white .section__title {
+    color: #824936;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.1rem;
+}
+
+.two-cols {
+    display: flex;
+    justify-content: center;
+}
+
+.section__content+.section__content {
+    margin-left: 3em;
+}
+
+
+/* black section colors and fonts */
+
+.section--black {
+    background-color: #222C2A;
+    color: #fff;
+}
+
+.section--black .section__title {
+    color: #F3EED9;
+}
+
+.section--black .section__text {
+    margin-right: 10%;
+    width: 45%;
+}
+
+.section--black .section__image {
+    width: 45%;
+}
+
+
+/* brown section colors and fonts */
+
+.section--brown {
+    background-color: #824936;
+    color: #fff;
+}
+
+.section--brown .section__title {
+    color: #F3EED9;
+}
+
+.section--brown .section__text {
+    margin-left: 10%;
+    width: 45%;
+}
+
+.section--brown .section__image {
+    width: 45%;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+}
